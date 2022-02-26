@@ -33,8 +33,7 @@ function User() {
                 email,
                 address
                 
-            }),
-            
+            }),           
             
         })
         alert("Form submited successfully...!")
@@ -43,46 +42,29 @@ function User() {
             email : '',
             mobile : '',
             address : ''
-        })
-        
-
-        }
-        
-       
-        
-        
-        
-
-        
-        
-        
+        })       
+        }    
     }
   return (
     <div className='col-md-6 offset-md-3'>
-
         <div className='card m-5 w-75'>
             <div className='card-body'>
                 <h4>User Data</h4>
-            <form action="" className='form-group ' >
-            <label htmlFor="">Name </label>
-            <input type="text" name='name' className='form-control' onChange={(e)=>handleChange(e)} value={user.name} />
-            <label htmlFor="">Mobile </label>
-            <input type="number" name='mobile' className='form-control' onChange={(e)=>handleChange(e)} value={user.mobile}/>
-            <label htmlFor="">E-Mail </label>
-            <input type="email" name='email' className='form-control' onChange={(e)=>handleChange(e)} value={user.email}/>
-            <label htmlFor="">Address </label>
-            <input type="text" name='address' className='form-control' onChange={(e)=>handleChange(e)} value={user.address}/>
-        </form>
-
+                <form action="" className='form-group ' >
+                    <label htmlFor="">Name </label>
+                    <input type="text" name='name' className='form-control' onChange={(e)=>handleChange(e)} value={user.name} />
+                    <label htmlFor="">Mobile </label>
+                    <input type="number" name='mobile' className='form-control' onChange={(e)=>handleChange(e)} value={user.mobile}/>
+                    <label htmlFor="">E-Mail </label>
+                    <input type="email" name='email' className='form-control' onChange={(e)=>handleChange(e)} value={user.email}/>
+                    <label htmlFor="">Address </label>
+                    <input type="text" name='address' className='form-control' onChange={(e)=>handleChange(e)} value={user.address}/>
+                </form>
             </div>
             <div className='card-footer'>
                 <input type="submit"onClick={(e)=>{handleSubmit(e)}} className='btn btn-outline-success' value='Submit' />
-
             </div>
-
-        </div>
-        
-
+        </div>       
     </div>
   )
 }
